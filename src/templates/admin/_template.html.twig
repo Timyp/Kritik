@@ -1,0 +1,55 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+    {# Menu qui sera affiché sur toutes les pages du Back-Office #}
+    <nav class="navbar has-background-info is-info">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="{{ path('home') }}">
+                <p class="subtitle is-4 has-text-white">
+                    <i class="fab fa-korvue"></i><b>RITIK</b>
+                </p>
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="{{ path('admin_dashboard') }}">
+                    Dashboard
+                </a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-dark is-small" href="{{ path('account_profile') }}">
+                            <span class="icon"><i class="fas fa-user-circle"></i></span>
+                            <strong>{{ app.user.pseudo }}</strong>
+                        </a>
+                        <a class="button is-light is-small" href="{{ path('app_logout') }}">
+                            Déconnection
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    {# Bloc qui contiendra le contenu de chaque page #}
+    <div class="section">
+        <h1 class="title">{{ block('title') }}</h1>
+
+        {% include 'includes/flashes.html.twig' %}
+
+        {% block content %}{% endblock %}
+    </div>
+
+
+{% endblock %}

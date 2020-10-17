@@ -1,0 +1,11 @@
+{% extends "_template.html.twig" %}
+
+{% block title %}
+    Nouveauté : {{ record_news|length }}
+{% endblock %}
+
+{% block content %}
+    {% include 'record/_record_list.html.twig' with {
+        record_list: record_news
+    } %}
+{% endblock %}

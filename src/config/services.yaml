@@ -1,0 +1,44 @@
+# This file is the entry point to configure your own services.
+# Files in the packages/ subdirectory configure your dependencies.
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+parameters:
+    #ce parametre est réutilisable dans n'importe qu'elle fichier de conf.
+    app_version: 'v%env(APP_VERSION)%'
+
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+        #section pour déclarer des arguments récupérable par autowiring
+        bind:
+            string $appVersion: '%app_version%'
+
+    # makes classes in src/ available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
+    App\:
+        resource: '../src/'
+        exclude:
+            - '../src/DependencyInjection/'
+            - '../src/Entity/'
+            - '../src/Kernel.php'
+            - '../src/Tests/'
+
+    # controllers are imported separately to make sure services can be injected
+    # as action arguments even if you don't extend any base controller class
+    App\Controller\:
+        resource: '../src/Controller/'
+        tags: ['controller.service_arguments']
+
+    # add more service definitions when explicit configuration is needed
+    # please note that last definitions always *replace* previous ones
+
+    #exemple de declaration de service (liste des arguments complétée avec le "bind" un peu plus haut)
+    app.version_service:
+        class: App\Service\AppVersionService
+        arguments:
+            $env: '%kernel.environment%'  #%foo  paramètre de config
+    App\Service\AppVersionService: '@app.version_service' #@foo service identifié foo

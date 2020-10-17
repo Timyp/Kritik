@@ -1,0 +1,16 @@
+{% extends '_template.html.twig' %}
+
+{% block title %}
+    Label: {{ label.name }}
+{% endblock %}
+
+{% block content %}
+    <h2 class="subtitle">
+        Production: {{ label.records|length }}
+    </h2>
+
+    {% include 'record/_record_list.html.twig' with {
+        record_list: label.records
+    } %}
+
+{% endblock %}

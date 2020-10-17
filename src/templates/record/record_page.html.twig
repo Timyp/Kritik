@@ -1,0 +1,117 @@
+{% extends '_template.html.twig' %}
+
+{% block title %}
+    {{ record.title }}
+{% endblock %}
+
+{% block content %}
+    <div class="columns">
+        <div class="column is-two-fifth">
+            <figure class="image is-1by1">
+                <img src="https://loremflickr.com/1024/1024/album,music/all?lock={{ record.id }}">
+            </figure>
+        </div>
+
+        <div class="column">
+            <h2 class="subtitle is-size-3">
+                Artiste:
+                <a href="{{ path('artiste_page', {id:record.artist.id}) }}">
+                    {{ record.artist.name }}
+                </a>
+            </h2>
+
+            {%  if record.label is not null %}
+                <h3 class="subtitle is-size-3">
+                    Label:
+                    <a href="{{ path('label_page', {id: record.label.id}) }}">
+                        {{ record.label.name }}
+                    </a>
+                </h3>
+            {%  endif %}
+
+            <p class="content">
+                {{ record.description }}
+            </p>
+
+            <hr>
+
+            <h6 class="is-size-7">
+                 <span class="tag is-primary">
+                    {{ record.averageNote is null ? '?' : record.averageNote|number_format(2, '.') }}
+                    /10
+                </span>
+                <span class="icon has-text-info"><i class="fas fa-info-circle"></i></span>
+                <span>Sorti le {{ record.releasedAt|date('d/m/y') }}</span>
+            </h6>
+            <hr>
+            {% if is_granted('ROLE_USER') %}
+                {{ form_start(note_form) }}
+                    {{ form_row(note_form.value, {
+                        label: 'Votre note:',
+                        help: 'Vous ne pouvez noter un album qu\'une seule fois.'
+                    }) }}
+
+                {{ form_row(note_form.comment, {
+                    label: 'Commentaire (facultatif):'
+                }) }}
+
+                <button type="submit" class="button is-fullwidth is-primary">
+                    Noter !
+                </button>
+
+                {{ form_end(note_form) }}
+            {% else %}
+                <div class="section">
+                    <div class="content">
+                        <p class="has-text-centered">Connectes toi pour noter !</p>
+                    </div>
+                    <div class="columns is-centered">
+                        <div class="column is-one-quarter">
+                            <a href="{{ path('app_register') }}" class="button is-fullwidth is-info is-outlined">Inscription</a>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <a href="{{ path('app_login') }}" class="button is-fullwidth is-primary">Connexion</a>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
+        </div>
+    </div>
+
+    {% for note in record.notes %}
+        <article class="media">
+            <figure class="media-left">
+                <p class="image is-64x64">
+                    <img src="https://robohash.org/{{ note.author.username }}?set=set5" alt="Avatar">
+                </p>
+            </figure>
+
+            <div class="media-content">
+                <div class="content">
+                    <p>
+                        <span class="tag is-primary is-light">
+                            {{ note.value }}
+                            /10
+                        </span>
+                        <strong>{{ note.author.pseudo }}</strong>
+                        <br>
+                        {{ note.comment }}
+                    </p>
+                </div>
+            </div>
+
+            {% if is_granted('NOTE_DELETE', note) %}
+                <div class="media-right">
+                    <a href="{{ path('record_note_delete', {
+                                id:note.id,
+                                token: csrf_token('record_note_delete')
+                            }) }}" class="button is-small is-danger is-light">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </div>
+            {% endif %}
+        </article>
+    {% endfor %}
+{% endblock %}
+
