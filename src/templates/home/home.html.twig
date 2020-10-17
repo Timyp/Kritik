@@ -3,3 +3,47 @@
 {% block title %}
     Accueil
 {% endblock %}
+
+{% block content %}
+    <h2 class="subtitle">Just added</h2>
+    <div class="columns">
+        {% if lastRecords is not null %}
+            {% for record in lastRecords %}
+                <div class="column is-one-quarter">
+                    <div class="box">
+                        <article class="media">
+                            <div class="media-left">
+                                <figure class="image is-128x128">
+                                    <a href="{{ path('record_page', {id: record.id}) }}" class="has-text-black">
+                                        <img src="https://loremflickr.com/256/256/artist,music,musician/all?lock={{ record.id }}" alt="Image">
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <a href="{{ path('record_page', {id: record.id}) }}" class="has-text-black">
+                                            <strong>{{ record.title }}</strong><br>
+                                            <strong>{{ record.artist.name }}</strong>
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="{{ path('record_page', {id: record.id}) }}" class="has-text-black">
+                                            {{ record.description }}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+
+    </div>
+
+
+
+    
+    
+{% endblock %}

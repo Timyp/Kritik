@@ -2,25 +2,26 @@
 
 namespace App\Controller;
 
-use App\Entity\Artist;
+use App\Entity\Record;
 use App\Repository\ArtistRepository;
-use App\Service\AppVersionService;
-use Doctrine\ORM\EntityManagerInterface;
+use App\Repository\RecordRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\Session\Session;
-use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
 class HomeController extends AbstractController
 {
     /**
      * @Route("/", name="home")
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function index()
+    public function index(RecordRepository $repository)
     {
-        return $this->render('home/home.html.twig');
+        //Get the lastest
+        $lastRecords = $repository->findBy([], ['releasedAt' => 'desc'], 4);
+
+        return $this->render('home/home.html.twig', [
+            'lastRecords' => $lastRecords,
+        ]);
     }
 
     /**
@@ -28,15 +29,15 @@ class HomeController extends AbstractController
      * @Route("/test", name="test")
      * @param ArtistRepository $repository
      */
-    public function test(ArtistRepository $repository)
-    {
+//    public function test(ArtistRepository $repository)
+//    {
         /**
          * findAll() permet de récuperer toutes les entités.  return array
          * find by récuperer des entités selon des critères return array
          * findOneBy récuperer une seul entité selon des critères return object ou null
          * find récuperer une entité par sa primary key return object or null
          */
-        $resultat = $repository->find(34);
-        dd($resultat);
-    }
+//        $resultat = $repository->find(34);
+//        dd($resultat);
+//    }
 }
