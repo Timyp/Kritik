@@ -5,6 +5,26 @@
 {% endblock %}
 
 {% block content %}
+
+    <h2 class="subtitle">Label du mois</h2>
+    <div class="columns">
+        {% if promotedLabel is not null %}
+            {% for label in promotedLabel %}
+                <div class="column is-two-thirds">
+                    <figure class="image is-square">
+                        <a href="{{ path('label_page', {id: label.id}) }}" class="has-text-black">
+                            <img src="https://loremflickr.com/256/256/artist,music,musician/all?lock={{ label.id }}" alt="Image">
+                        </a>
+                    </figure>
+                </div>
+                <div>
+                    Yo mon label
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+
+
     <h2 class="subtitle">Just added</h2>
     <div class="columns">
         {% if lastRecords is not null %}

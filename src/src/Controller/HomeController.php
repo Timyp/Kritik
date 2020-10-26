@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Record;
 use App\Repository\ArtistRepository;
+use App\Repository\LabelRepository;
 use App\Repository\RecordRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
@@ -14,12 +15,18 @@ class HomeController extends AbstractController
      * @Route("/", name="home")
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function index(RecordRepository $repository)
+    public function index(RecordRepository $repository, LabelRepository $labelRepository)
     {
         //Get the lastest
         $lastRecords = $repository->findBy([], ['releasedAt' => 'desc'], 4);
 
+        //Get label promoted
+        $getPromoted = $labelRepository->findBy([
+            'promote' => 1
+        ]);
+
         return $this->render('home/home.html.twig', [
+            'promotedLabel' => $getPromoted,
             'lastRecords' => $lastRecords,
         ]);
     }

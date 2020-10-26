@@ -29,6 +29,11 @@ class Label
      */
     private $records;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $promote;
+
     public function __construct()
     {
         $this->records = new ArrayCollection();
@@ -78,6 +83,18 @@ class Label
                 $record->setLabel(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getPromote(): ?bool
+    {
+        return $this->promote;
+    }
+
+    public function setPromote(bool $promote): self
+    {
+        $this->promote = $promote;
 
         return $this;
     }
