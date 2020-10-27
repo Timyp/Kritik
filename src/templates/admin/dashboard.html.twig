@@ -3,3 +3,39 @@
 {% block title %}
     Dashboard
 {% endblock %}
+
+{% block content %}
+
+    <div class="container block">
+        <h2 class="title">Labels</h2>
+        Nombres total : {{ pagination.getTotalItemCount }}
+        <table class="table is-narrow is-fullwidth ">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>name</th>
+                    <th>Description</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for label in pagination %}
+                    <tr>
+                        <td>{{ label.id }}</td>
+                        <td>{{ label.name }}</td>
+                        <td>a faire</td>
+                        <td class="has-text-right">
+                            <a class="button is-primary" href="{{ path('admin_label_form', {id: label.id}) }}">
+                                Modifier
+                            </a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        {{ knp_pagination_render(pagination) }}
+    </div>
+
+
+{% endblock %}

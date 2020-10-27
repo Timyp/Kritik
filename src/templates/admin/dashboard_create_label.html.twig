@@ -1,0 +1,23 @@
+{% extends "admin/_template.html.twig" %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block content %}
+        {{ form_start(label_form)}}
+            {{ form_row(label_form.name, {
+                label: 'Nom du label:',
+                help: 'Indiquez le noms du label.'
+            }) }}
+
+            {{ form_row(label_form.promote, {
+                label: 'Mise en avant:',
+                help: 'Mettre en avant le label sur la home du site.'
+            }) }}
+
+            <button type="submit" class="button is-fullwidth is-primary">
+                Valider
+            </button>
+        {{ form_end(label_form) }}
+{% endblock %}
