@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7f0d4e4b-d09f-4c1f-9a57-b08086724e16" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.env.test" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/src/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="DockerExecCommand">
+    <ExecCommand>
+      <option name="command" value="/bin/bash" />
+      <option name="imageId" value="sha256:5273421348343d74288c1fcc959c6fb0924d94b70812e91789bf6f193eeedbe3" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="/bin/bash" />
+      <option name="imageId" value="sha256:a42c5ed85bedbd66062aff30a0323b76cdd1058256aa528e67c841243ba71cb6" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="/bin/bash" />
+      <option name="imageId" value="sha256:44f636aeaa125f5be5cb9b03c2aab14d411ea0225ce4e783f1e6d4f4f05b7d6e" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="/bin/bash" />
+      <option name="imageId" value="sha256:ee4065f682f6ac4a343dc3b9da888fd479e1318caca3af2610155e310958fbb3" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="/bin/bash" />
+      <option name="imageId" value="sha256:badf46acc6581b66c5e457c35fdb13ef150fe11103bc0bf9127e37c4bcc9c5ea" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="/bin/bash" />
+      <option name="imageId" value="sha256:d7a854f700f0bb7f81db728d277dc9057395f0e1d062538a727dcaf9c4ecd8e8" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="/bin/bash" />
+      <option name="imageId" value="sha256:8586771bbe7826dccfa3d0ff390ddeea054c95b1ef8a8deb0395414425ad5698" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="/bin/bash" />
+      <option name="imageId" value="sha256:8ecc6c5ebc138d57e536a5f5b05051a4f89655ed1e6be0d02ce2cc22ce2e5721" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="/bin/bash" />
+      <option name="imageId" value="sha256:c9829bd6da1c64ac420fa9b09b3d8715f606454b4da6978a97cb72eccf7f3986" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="/bin/bash" />
+      <option name="imageId" value="sha256:d921e44575751fd14396fe17b61fc211d8a8f6b88b4f521a11b3eb61058f5e52" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="/bin/bash" />
+      <option name="imageId" value="sha256:5b587f2afb43e75731132ce47f97a70828f3ce276c9ddd931b15863ea77cb2f9" />
+    </ExecCommand>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/src/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/src/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/src/vendor/composer" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/src/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/src/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/dama/doctrine-test-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/src/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/src/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/src/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/src/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/src/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/src/vendor/webimpress/safe-writer" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-intl-icu" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1iycHLKS5tfCk1svbB8456HMR65" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="service.view.auto.scroll.to.source" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="php/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="" />
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="docker/php/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.php/Dockerfile" />
+        <item itemvalue="Docker.php/Dockerfile" />
+        <item itemvalue="Docker.php/Dockerfile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f0d4e4b-d09f-4c1f-9a57-b08086724e16" name="Default Changelist" comment="" />
+      <created>1602883183997</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602883183997</updated>
+      <workItem from="1602883185066" duration="5262000" />
+      <workItem from="1602947896800" duration="5878000" />
+      <workItem from="1602967587005" duration="309000" />
+      <workItem from="1602967905868" duration="49000" />
+      <workItem from="1602967963194" duration="277000" />
+      <workItem from="1602968244778" duration="281000" />
+      <workItem from="1602968538135" duration="841000" />
+      <workItem from="1602969458243" duration="647000" />
+      <workItem from="1602970118582" duration="218000" />
+      <workItem from="1602970345455" duration="4483000" />
+      <workItem from="1603093001080" duration="138000" />
+      <workItem from="1603714104538" duration="2508000" />
+      <workItem from="1603784668633" duration="2890000" />
+      <workItem from="1603794612264" duration="887000" />
+    </task>
+    <task id="LOCAL-00001" summary="add files">
+      <created>1602968309454</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602968309454</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add files">
+      <created>1602968727990</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602968727990</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Gitignore">
+      <created>1602970228641</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602970228641</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Home Just added">
+      <created>1602974815536</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602974815536</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Home ajout label promus">
+      <created>1603716593278</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603716593278</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Home ajout label promus">
+      <created>1603787547777</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603787547777</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Modification Git Ignore">
+      <created>1603795118079</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603795118079</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Modification Git Ignore">
+      <created>1603795201123</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603795201123</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/src" />
+    </ignored-roots>
+    <MESSAGE value="add files" />
+    <MESSAGE value="Gitignore" />
+    <MESSAGE value="Home Just added" />
+    <MESSAGE value="Home ajout label promus" />
+    <MESSAGE value="Modification Git Ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification Git Ignore" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1022" y="79" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602971296449">
+      <screen x="72" y="0" width="1848" height="1080" />
+    </state>
+    <state x="1022" y="79" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1602971296449" />
+    <state x="1022" y="104" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1602883982048" />
+    <state x="499" y="186" width="912" height="714" key="CommitChangelistDialog2" timestamp="1603795201056">
+      <screen x="72" y="0" width="1848" height="1080" />
+    </state>
+    <state x="499" y="186" width="912" height="714" key="CommitChangelistDialog2/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603795201056" />
+    <state x="664" y="223" width="581" height="640" key="RollbackChangesDialog" timestamp="1603715773160">
+      <screen x="72" y="0" width="1848" height="1080" />
+    </state>
+    <state x="664" y="223" width="581" height="640" key="RollbackChangesDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603715773160" />
+    <state x="485" y="165" width="1022" height="737" key="SettingsEditor" timestamp="1602972108136">
+      <screen x="72" y="0" width="1848" height="1080" />
+    </state>
+    <state x="485" y="165" width="1022" height="737" key="SettingsEditor/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1602972108136" />
+    <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1602883341983" />
+    <state width="498" height="458" key="SwitcherDM" timestamp="1603715820378">
+      <screen x="72" y="0" width="1848" height="1080" />
+    </state>
+    <state width="498" height="458" key="SwitcherDM/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603715820378" />
+    <state width="498" height="446" key="SwitcherDM/72.27.1848.1053@72.27.1848.1053" timestamp="1602883884153" />
+    <state x="555" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603795205230">
+      <screen x="72" y="0" width="1848" height="1080" />
+    </state>
+    <state x="555" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603795205230" />
+    <state x="687" y="272" width="618" height="536" key="find.popup" timestamp="1603716205826">
+      <screen x="72" y="0" width="1848" height="1080" />
+    </state>
+    <state x="687" y="272" width="618" height="536" key="find.popup/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603716205826" />
+    <state x="687" y="292" width="618" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1602887261000" />
+    <state x="659" y="238" width="672" height="696" key="search.everywhere.popup" timestamp="1603786335694">
+      <screen x="72" y="0" width="1848" height="1080" />
+    </state>
+    <state x="659" y="238" width="672" height="696" key="search.everywhere.popup/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603786335694" />
+    <state x="659" y="476" width="672" height="1391" key="search.everywhere.popup/72.0.1848.2160@72.0.1848.2160" timestamp="1602950816212" />
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1602885664118" />
+  </component>
+</project>
