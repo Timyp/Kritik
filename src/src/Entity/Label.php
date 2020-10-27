@@ -34,6 +34,11 @@ class Label
      */
     private $promote;
 
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $description;
+
     public function __construct()
     {
         $this->records = new ArrayCollection();
@@ -95,6 +100,18 @@ class Label
     public function setPromote(bool $promote): self
     {
         $this->promote = $promote;
+
+        return $this;
+    }
+
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(?string $description): self
+    {
+        $this->description = $description;
 
         return $this;
     }

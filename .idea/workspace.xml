@@ -6,20 +6,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f0d4e4b-d09f-4c1f-9a57-b08086724e16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/config/packages/knp_paginator.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/packages/translation.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/Form/LabelFormType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/admin/dashboard_create_label.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/admin/dashboard_label.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sf5_dockerise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sf5_dockerise.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Controller/admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Controller/admin/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Entity/Label.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Entity/Label.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Form/LabelFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Form/LabelFormType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/admin/dashboard.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/admin/dashboard.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/admin/dashboard_create_label.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/admin/dashboard_create_label.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/admin/dashboard_label.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/admin/dashboard_label.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/home/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/home/home.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +250,7 @@
       <workItem from="1603784668633" duration="2890000" />
       <workItem from="1603794612264" duration="1296000" />
       <workItem from="1603810911993" duration="7772000" />
-      <workItem from="1603822038349" duration="3980000" />
+      <workItem from="1603822038349" duration="5350000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1602968309454</created>
@@ -322,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603795517288</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Construction du back">
+      <created>1603837084438</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603837084438</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +379,8 @@
     <MESSAGE value="Home Just added" />
     <MESSAGE value="Home ajout label promus" />
     <MESSAGE value="Modification Git Ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification Git Ignore" />
+    <MESSAGE value="Construction du back" />
+    <option name="LAST_COMMIT_MESSAGE" value="Construction du back" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1022" y="79" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602971296449">
@@ -391,10 +392,11 @@
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="693" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603817232722" />
-    <state x="499" y="186" width="912" height="714" key="CommitChangelistDialog2" timestamp="1603795517232">
-      <screen x="72" y="0" width="1848" height="1080" />
+    <state x="499" y="208" width="912" height="714" key="CommitChangelistDialog2" timestamp="1603837084341">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="499" y="186" width="912" height="714" key="CommitChangelistDialog2/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603795517232" />
+    <state x="499" y="208" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1603837084341" />
     <state x="100" y="100" width="1720" height="880" key="DiffContextDialog" timestamp="1603811052970">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
@@ -421,10 +423,11 @@
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="803" y="454" width="303" height="178" key="VCS.ChangelistChooser/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603811024014" />
-    <state x="555" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603795573291">
-      <screen x="72" y="0" width="1848" height="1080" />
+    <state x="555" y="296" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603837090769">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="555" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603795573291" />
+    <state x="555" y="296" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1603837090769" />
     <state x="687" y="272" width="767" height="536" key="find.popup" timestamp="1603815639956">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
