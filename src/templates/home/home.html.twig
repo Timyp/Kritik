@@ -1,31 +1,34 @@
 {% extends "_template.html.twig" %}
 
 {% block title %}
-    Accueil
 {% endblock %}
 
 {% block content %}
 
-    <h2 class="subtitle">Label du mois</h2>
-    <div class="columns">
+    <h2 class="title">Label du mois</h2>
+    <div class="columns promoteLabel mb-6">
         {% if promotedLabel is not null %}
             {% for label in promotedLabel %}
-                <div class="column is-two-thirds">
+                <div class="column is-one-third">
                     <figure class="image is-square">
                         <a href="{{ path('label_page', {id: label.id}) }}" class="has-text-black">
-                            <img src="https://loremflickr.com/256/256/artist,music,musician/all?lock={{ label.id }}" alt="Image">
+                            <img src="https://loremflickr.com/400/400/artist,music,musician/all?lock={{ label.id }}" alt="Image">
                         </a>
                     </figure>
                 </div>
-                <div>
-                    Yo mon label
+                <div class="column">
+                    <p class="is-medium">Ajouter une description au label</p>
+
+                    <div class="buttons is-centered align-bottom">
+                        <a class="button is-link" href="{{ path('label_page', {id: label.id}) }}">Voir le label {{ label.name }}</a>
+                    </div>
                 </div>
             {% endfor %}
         {% endif %}
     </div>
 
 
-    <h2 class="subtitle">Just added</h2>
+    <h2 class="title">Just added</h2>
     <div class="columns">
         {% if lastRecords is not null %}
             {% for record in lastRecords %}
