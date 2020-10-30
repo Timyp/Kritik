@@ -13,6 +13,8 @@ class LabelFixtures extends AbstractFixtures
        $this->createMany(15,'label', function(){
            return (new Label())
                ->setName($this->faker->lastName . ' Records')
+               ->setPromote(false)
+               ->setDescription($this->faker->optional()->realText())
            ;
        });
     }
