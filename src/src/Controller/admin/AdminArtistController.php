@@ -80,7 +80,6 @@ class AdminArtistController extends AbstractController
      * @param ArtistRepository $artistRepository
      * @param Request $request
      * @param EntityManagerInterface $manager
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|Response
      */
     public function createArtist(
         ArtistRepository $artistRepository,
