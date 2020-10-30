@@ -24,7 +24,8 @@ class AdminArtistController extends AbstractController
      * @param PaginatorInterface $paginator
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function index(ArtistRepository $artistRepository, Request $request, PaginatorInterface $paginator) {
+    public function index(ArtistRepository $artistRepository, Request $request, PaginatorInterface $paginator)
+    {
         //Get artists list
         $artist = array_reverse($artistRepository->findAll());
         $pagination = $paginator->paginate(
@@ -66,6 +67,35 @@ class AdminArtistController extends AbstractController
             $manager->flush();
 
                 $this->addFlash('success', 'L\'artiste à bien été modifiée.');
+            return $this->redirectToRoute('admin_artist');
+        }
+
+        return $this->render('admin/dashboard_artist_modify.html.twig', [
+            'artist_form' => $form->createView(),
+        ]);
+    }
+
+    /**
+     * @Route("/create_artist", name="create_artist")
+     * @param ArtistRepository $artistRepository
+     * @param Request $request
+     * @param EntityManagerInterface $manager
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|Response
+     */
+    public function createArtist(
+        ArtistRepository $artistRepository,
+        Request $request,
+        EntityManagerInterface $manager
+    ){
+        //Création du formulaire
+        $form = $this->createForm(ArtistFormType::class);
+        $form->handleRequest($request);
+
+        if($form->isSubmitted() && $form->isValid()) {
+            $artist = $form->getData();
+            $manager->persist($artist);
+            $manager->flush();
+            $this->addFlash('success', 'Votre artiste a bien été créé.');
             return $this->redirectToRoute('admin_artist');
         }
 
