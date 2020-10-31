@@ -44,6 +44,7 @@ class AdminLabelController extends AbstractController
     /**
      * @Route("/label_form/{id}", name="label_form")
      * @param Label $label
+     * @param LabelRepository $repository
      * @param Request $request
      * @param EntityManagerInterface $manager
      * @return Response

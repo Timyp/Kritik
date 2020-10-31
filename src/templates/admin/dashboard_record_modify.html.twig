@@ -1,0 +1,38 @@
+{% extends "admin/_template.html.twig" %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block content %}
+        {{ form_start(record_form)}}
+            {{ form_row(record_form.releasedAt, {
+                label: 'Choix de la date de sortie:',
+                help: 'Choisir la date de sortie de l\'album.'
+            }) }}
+
+            {{ form_row(record_form.title, {
+                label: 'Nom de l\'album:',
+                help: 'Indiquez le noms du dique.'
+            }) }}
+
+            {{ form_row(record_form.description, {
+                label: 'Description:',
+                help: 'Texte présentant du disque.'
+            }) }}
+
+            {{ form_row(record_form.artist, {
+                label: 'Choix de l\'artiste:',
+                help: 'Choisir l’artiste.'
+            }) }}
+
+            {{ form_row(record_form.label, {
+                label: 'Choix du label:',
+                help: 'Choisir le label dans la liste des labels existant.'
+            }) }}
+
+            <button type="submit" class="button is-fullwidth is-primary">
+                Valider
+            </button>
+        {{ form_end(record_form) }}
+{% endblock %}

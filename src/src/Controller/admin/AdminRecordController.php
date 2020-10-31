@@ -4,7 +4,10 @@
 namespace App\Controller\admin;
 
 
+use App\Entity\Record;
+use App\Form\RecordFormType;
 use App\Repository\RecordRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -43,6 +46,42 @@ class AdminRecordController extends AbstractController
 
         return $this->render('admin/dashboard_record_index.html.twig', [
             'pagination' => $pagination,
+        ]);
+    }
+
+    /**
+     * @Route("/record_form/{id}", name="record_form")
+     * @param Record $record
+     * @param RecordRepository $repository
+     * @param Request $request
+     * @param EntityManagerInterface $manager
+     */
+    public function modifyRecord(
+        Record $record,
+        RecordRepository $repository,
+        Request $request,
+        EntityManagerInterface $manager
+    ){
+
+        //Récupération du label
+        $currentRecord = $repository->findOneBy([
+            'id' => $record->getId(),
+        ]);
+
+        //Création du formulaire
+        $form = $this->createForm(RecordFormType::class, $currentRecord);
+        $form->handleRequest($request);
+
+        if($form->isSubmitted() && $form->isValid()) {
+            $manager->persist($currentRecord);
+            $manager->flush();
+
+            $this->addFlash('success', 'Le disque à bien été modifié.');
+            return $this->redirectToRoute('admin_record');
+        }
+
+        return $this->render('admin/dashboard_record_modify.html.twig', [
+            'record_form' => $form->createView(),
         ]);
     }
 }
