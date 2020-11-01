@@ -84,4 +84,53 @@ class AdminRecordController extends AbstractController
             'record_form' => $form->createView(),
         ]);
     }
+
+    /**
+     * @Route("/create_record", name="create_record")
+     * @param RecordRepository $recordRepository
+     * @param Request $request
+     * @param EntityManagerInterface $manager
+     */
+    public function createRecord(
+        RecordRepository $recordRepository,
+        Request $request,
+        EntityManagerInterface $manager
+    ){
+        //Création du formulaire
+        $form = $this->createForm(RecordFormType::class);
+        $form->handleRequest($request);
+
+        if($form->isSubmitted() && $form->isValid()) {
+            $record = $form->getData();
+            $manager->persist($record);
+            $manager->flush();
+            $this->addFlash('success', 'Votre album a bien été créé.');
+            return $this->redirectToRoute('admin_record');
+        }
+
+        return $this->render('admin/dashboard_record_modify.html.twig', [
+            'record_form' => $form->createView(),
+        ]);
+    }
+
+    /**
+     * @Route("/record/{id}/delete/{token}", name="record_delete")
+     * @param Record $record
+     * @param string $token
+     * @param EntityManagerInterface $manager
+     */
+    public function deleteRecord(Record $record, string $token, EntityManagerInterface $manager)
+    {
+        //Vérification du jeton CSRF
+        if(false === $this->isCsrfTokenValid('record_delete', $token)) {
+            $this->addFlash('Warning', 'Jeton invalide.');
+            return $this->redirectToRoute('admin_record');
+        }
+
+        //Remove record
+        $manager->remove($record);
+        $manager->flush();
+        $this->addFlash('info', 'L\'album a bien été supprimé.');
+        return $this->redirectToRoute('admin_record');
+    }
 }

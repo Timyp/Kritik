@@ -102,4 +102,25 @@ class AdminArtistController extends AbstractController
             'artist_form' => $form->createView(),
         ]);
     }
+
+    /**
+     * * @Route("/artist/{id}/delete/{token}", name="artist_delete")
+     * @param Artist $artist
+     * @param string $token
+     * @param EntityManagerInterface $manager
+     */
+    public function deleteArtist(Artist $artist, string $token, EntityManagerInterface $manager)
+    {
+        //Vérification du jeton CSRF
+        if(false === $this->isCsrfTokenValid('artist_delete', $token)) {
+            $this->addFlash('Warning', 'Jeton invalide.');
+            return $this->redirectToRoute('admin_artist');
+        }
+
+        //Remove artist
+        $manager->remove($artist);
+        $manager->flush();
+        $this->addFlash('info', 'L\'artiste a bien été supprimé.');
+        return $this->redirectToRoute('admin_artist');
+    }
 }

@@ -25,7 +25,7 @@ class Label
     private $name;
 
     /**
-     * @ORM\OneToMany(targetEntity=Record::class, mappedBy="label")
+     * @ORM\OneToMany(targetEntity=Record::class, mappedBy="label", orphanRemoval=true)
      */
     private $records;
 

@@ -19,7 +19,7 @@ class AdminLabelController extends AbstractController
 {
 
     /**
-     * @Route("_label", name="label")
+     * @Route("", name="label")
      * @param LabelRepository $labelRepository
      * @param Request $request
      * @param PaginatorInterface $paginator
@@ -105,5 +105,26 @@ class AdminLabelController extends AbstractController
         return $this->render('admin/dashboard_label.html.twig', [
             'label_form' => $form->createView(),
         ]);
+    }
+
+    /**
+     * @Route("/label/{id}/delete/{token}", name="label_delete")
+     * @param Label $label
+     * @param string $token
+     * @param EntityManagerInterface $manager
+     */
+    public function deleteLabel(Label $label, string $token, EntityManagerInterface $manager)
+    {
+        //Vérification du jeton CSRF
+        if(false === $this->isCsrfTokenValid('label_delete', $token)) {
+            $this->addFlash('Warning', 'Jeton invalide.');
+            return $this->redirectToRoute('admin_label');
+        }
+
+        //Remove label
+        $manager->remove($label);
+        $manager->flush();
+        $this->addFlash('info', 'Le label a bien été supprimé.');
+        return $this->redirectToRoute('admin_label');
     }
 }

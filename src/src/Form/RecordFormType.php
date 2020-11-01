@@ -25,7 +25,7 @@ class RecordFormType extends AbstractType
             ])
             ->add('artist', EntityType::class, [
                 'class' => Artist::class,
-                'choice_label' => 'name'
+                'choice_label' => 'name',
             ])
             ->add('label', EntityType::class, [
                 'class' => Label::class,

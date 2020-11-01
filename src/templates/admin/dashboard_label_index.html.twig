@@ -22,6 +22,7 @@
                     <th>name</th>
                     <th>Description</th>
                     <th></th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -33,6 +34,11 @@
                         <td class="has-text-right">
                             <a class="button is-primary" href="{{ path('admin_label_form', {id: label.id}) }}">
                                 Modifier
+                            </a>
+                        </td>
+                        <td class="has-text-right">
+                            <a class="button is-danger is-light" href="{{ path('admin_label_delete', {id: label.id, token: csrf_token('label_delete')}) }}">
+                                Supprimer
                             </a>
                         </td>
                     </tr>

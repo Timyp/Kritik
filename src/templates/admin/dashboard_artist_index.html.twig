@@ -22,17 +22,23 @@
                     <th>name</th>
                     <th>Description</th>
                     <th></th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
-                {% for label in pagination %}
+                {% for artist in pagination %}
                     <tr>
-                        <td>{{ label.id }}</td>
-                        <td>{{ label.name }}</td>
-                        <td>{{ label.description }}</td>
+                        <td>{{ artist.id }}</td>
+                        <td>{{ artist.name }}</td>
+                        <td>{{ artist.description }}</td>
                         <td class="has-text-right">
-                            <a class="button is-primary" href="{{ path('admin_artist_form', {id: label.id}) }}">
+                            <a class="button is-primary" href="{{ path('admin_artist_form', {id: artist.id}) }}">
                                 Modifier
+                            </a>
+                        </td>
+                        <td class="has-text-right">
+                            <a class="button is-danger is-light" href="{{ path('admin_artist_delete', {id: artist.id, token: csrf_token('artist_delete')}) }}">
+                                Supprimer
                             </a>
                         </td>
                     </tr>
