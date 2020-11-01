@@ -7,18 +7,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7f0d4e4b-d09f-4c1f-9a57-b08086724e16" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/default.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Controller/admin/AdminArtistController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Controller/admin/AdminArtistController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Controller/admin/AdminLabelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Controller/admin/AdminLabelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Controller/admin/AdminRecordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Controller/admin/AdminRecordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Controller/admin/DashboardController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Entity/Label.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Entity/Label.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Form/RecordFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Form/RecordFormType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/_template.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/_template.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/admin/_template.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/admin/_template.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/admin/dashboard_artist_index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/admin/dashboard_artist_index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/admin/dashboard_label_index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/admin/dashboard_label_index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/admin/dashboard_record_index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/admin/dashboard_record_index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/home/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/home/home.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +261,7 @@
       <workItem from="1604074293268" duration="8666000" />
       <workItem from="1604183265884" duration="2555000" />
       <workItem from="1604233328084" duration="65000" />
-      <workItem from="1604245688470" duration="5993000" />
+      <workItem from="1604245688470" duration="7415000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1602968309454</created>
@@ -427,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604186180045</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="modif dashboard 01/11">
+      <created>1604271461054</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1604271461054</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +486,8 @@
     <MESSAGE value="modif fixtures" />
     <MESSAGE value="modif dashboard 30/10" />
     <MESSAGE value="modif dashboard 31/10" />
-    <option name="LAST_COMMIT_MESSAGE" value="modif dashboard 31/10" />
+    <MESSAGE value="modif dashboard 01/11" />
+    <option name="LAST_COMMIT_MESSAGE" value="modif dashboard 01/11" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1022" y="79" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602971296449">
@@ -504,10 +502,10 @@
     <state x="484" y="248" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1604081422575" />
     <state x="693" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603817232722" />
     <state x="414" y="-782" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.877/-231.-1080.1920.1080@-231.-1080.1920.1080" timestamp="1604267369911" />
-    <state x="213" y="-894" width="912" height="714" key="CommitChangelistDialog2" timestamp="1604186179790">
+    <state x="213" y="-894" width="912" height="714" key="CommitChangelistDialog2" timestamp="1604271460785">
       <screen x="-231" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="213" y="-894" key="CommitChangelistDialog2/0.0.1440.900/-231.-1080.1920.1080@-231.-1080.1920.1080" timestamp="1604186179790" />
+    <state x="213" y="-894" key="CommitChangelistDialog2/0.0.1440.900/-231.-1080.1920.1080@-231.-1080.1920.1080" timestamp="1604271460785" />
     <state x="499" y="186" width="912" height="714" key="CommitChangelistDialog2/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1604072989918" />
     <state x="499" y="208" width="912" height="714" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1603838425223" />
     <state x="100" y="100" width="1720" height="880" key="DiffContextDialog" timestamp="1603811052970">
@@ -539,10 +537,10 @@
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="803" y="454" width="303" height="178" key="VCS.ChangelistChooser/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603811024014" />
-    <state x="271" y="-804" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1604186184586">
+    <state x="271" y="-804" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1604271466095">
       <screen x="-231" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="271" y="-804" key="Vcs.Push.Dialog.v2/0.0.1440.900/-231.-1080.1920.1080@-231.-1080.1920.1080" timestamp="1604186184586" />
+    <state x="271" y="-804" key="Vcs.Push.Dialog.v2/0.0.1440.900/-231.-1080.1920.1080@-231.-1080.1920.1080" timestamp="1604271466095" />
     <state x="555" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1604073013542" />
     <state x="555" y="296" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1603838429118" />
     <state x="408" y="-808" width="798" height="588" key="find.popup" timestamp="1604271049552">

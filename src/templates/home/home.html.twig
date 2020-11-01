@@ -19,7 +19,7 @@
                 <div class="column">
                     <p class="is-medium">{{ label.description }}l</p>
 
-                    <div class="buttons is-centered align-bottom">
+                    <div class="buttons is-centered mt-6">
                         <a class="button is-link" href="{{ path('label_page', {id: label.id}) }}">Voir le label {{ label.name }}</a>
                     </div>
                 </div>
@@ -32,34 +32,40 @@
     <div class="columns">
         {% if lastRecords is not null %}
             {% for record in lastRecords %}
-                <div class="column is-one-quarter">
-                    <div class="box">
-                        <article class="media">
-                            <div class="media-left">
-                                <figure class="image is-128x128">
-                                    <a href="{{ path('record_page', {id: record.id}) }}" class="has-text-black">
-                                        <img src="https://loremflickr.com/256/256/artist,music,musician/all?lock={{ record.id }}" alt="Image">
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>
+                {% if loop.index0 % 2 == 0 %}
+                    <div class="column">
+                {% endif %}
+                    <div class="block is-6">
+                        <div class="box">
+                            <article class="media">
+                                <div class="media-left">
+                                    <figure class="image is-128x128">
                                         <a href="{{ path('record_page', {id: record.id}) }}" class="has-text-black">
-                                            <strong>{{ record.title }}</strong><br>
-                                            <strong>{{ record.artist.name }}</strong>
+                                            <img src="https://loremflickr.com/256/256/artist,music,musician/all?lock={{ record.id }}" alt="Image">
                                         </a>
-                                    </p>
-                                    <p>
-                                        <a href="{{ path('record_page', {id: record.id}) }}" class="has-text-black">
-                                            {{ record.description }}
-                                        </a>
-                                    </p>
+                                    </figure>
                                 </div>
-                            </div>
-                        </article>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <a href="{{ path('record_page', {id: record.id}) }}" class="has-text-black">
+                                                <strong>{{ record.title }}</strong><br>
+                                                <strong>{{ record.artist.name }}</strong>
+                                            </a>
+                                        </p>
+                                        <p>
+                                            <a href="{{ path('record_page', {id: record.id}) }}" class="has-text-black">
+                                                {{ record.description }}
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
                     </div>
-                </div>
+                {% if loop.index0 % 2 == 1 or loop.last %}
+                    </div>
+                {% endif %}
             {% endfor %}
         {% endif %}
 
