@@ -74,7 +74,7 @@
     </ExecCommand>
   </component>
   <component name="Git.Pull.Settings">
-    <option name="BRANCH" value="master" />
+    <option name="BRANCH" value="dev" />
   </component>
   <component name="Git.Rebase.Settings">
     <option name="NEW_BASE" value="master" />
@@ -543,6 +543,10 @@
     <state x="271" y="-804" key="Vcs.Push.Dialog.v2/0.0.1440.900/-231.-1080.1920.1080@-231.-1080.1920.1080" timestamp="1604271466095" />
     <state x="555" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1604073013542" />
     <state x="555" y="296" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1603838429118" />
+    <state x="741" y="455" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604446550365">
+      <screen x="72" y="0" width="1848" height="1080" />
+    </state>
+    <state x="741" y="455" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1604446550365" />
     <state x="408" y="-808" width="798" height="588" key="find.popup" timestamp="1604271049552">
       <screen x="-231" y="-1080" width="1920" height="1080" />
     </state>
