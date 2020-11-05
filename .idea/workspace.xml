@@ -7,6 +7,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7f0d4e4b-d09f-4c1f-9a57-b08086724e16" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/migrations/Version20201016212854.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/Version20201016212854.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/Controller/admin/AdminLabelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Controller/admin/AdminLabelController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +60,14 @@
     <ExecCommand>
       <option name="command" value="/bin/bash" />
       <option name="imageId" value="sha256:d7a854f700f0bb7f81db728d277dc9057395f0e1d062538a727dcaf9c4ecd8e8" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="/bin/bash" />
+      <option name="imageId" value="sha256:449468169d1ceb45b03fb7334ec66a8c59b53cb3d019896a17e5b77c46df6169" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="/bin/bash" />
+      <option name="imageId" value="sha256:758ff63db908b2753915002d175a9b0880c5e79390ab039b5524cb9c9ea1ffb1" />
     </ExecCommand>
     <ExecCommand>
       <option name="command" value="/bin/bash" />
@@ -265,6 +275,8 @@
       <workItem from="1604475040024" duration="5000" />
       <workItem from="1604486076651" duration="345000" />
       <workItem from="1604563136655" duration="136000" />
+      <workItem from="1604571008357" duration="852000" />
+      <workItem from="1604573128166" duration="1360000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1602968309454</created>
@@ -497,7 +509,8 @@
     <MESSAGE value="modif dashboard 30/10" />
     <MESSAGE value="modif dashboard 31/10" />
     <MESSAGE value="modif dashboard 01/11" />
-    <option name="LAST_COMMIT_MESSAGE" value="modif dashboard 01/11" />
+    <MESSAGE value="modif dashboard 05/11" />
+    <option name="LAST_COMMIT_MESSAGE" value="modif dashboard 05/11" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1022" y="79" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602971296449">
@@ -528,30 +541,30 @@
     <state x="341" y="-821" key="NewPhpClassDialog/0.0.1440.900/-231.-1080.1920.1080@-231.-1080.1920.1080" timestamp="1604099461607" />
     <state x="429" y="216" width="562" height="501" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1604081376657" />
     <state x="622" y="259" width="665" height="568" key="NewPhpClassDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603817029258" />
-    <state x="664" y="223" width="581" height="640" key="RollbackChangesDialog" timestamp="1603715773160">
+    <state x="664" y="223" width="581" height="640" key="RollbackChangesDialog" timestamp="1604571581175">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
-    <state x="664" y="223" width="581" height="640" key="RollbackChangesDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603715773160" />
+    <state x="664" y="223" width="581" height="640" key="RollbackChangesDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1604571581175" />
     <state x="485" y="165" width="1022" height="737" key="SettingsEditor" timestamp="1602972108136">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="485" y="165" width="1022" height="737" key="SettingsEditor/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1602972108136" />
     <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1602883341983" />
-    <state width="518" height="458" key="SwitcherDM" timestamp="1604268793568">
-      <screen x="-231" y="-1080" width="1920" height="1080" />
+    <state width="498" height="458" key="SwitcherDM" timestamp="1604573412163">
+      <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state width="518" height="458" key="SwitcherDM/0.0.1440.900/-231.-1080.1920.1080@-231.-1080.1920.1080" timestamp="1604268793568" />
-    <state width="498" height="458" key="SwitcherDM/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603818584310" />
+    <state width="498" height="458" key="SwitcherDM/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1604573412163" />
     <state width="498" height="446" key="SwitcherDM/72.27.1848.1053@72.27.1848.1053" timestamp="1602883884153" />
     <state x="803" y="454" width="303" height="178" key="VCS.ChangelistChooser" timestamp="1603811024014">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="803" y="454" width="303" height="178" key="VCS.ChangelistChooser/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603811024014" />
-    <state x="555" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1604562807107">
+    <state x="555" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1604563323387">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="271" y="-804" key="Vcs.Push.Dialog.v2/0.0.1440.900/-231.-1080.1920.1080@-231.-1080.1920.1080" timestamp="1604271466095" />
-    <state x="555" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1604562807107" />
+    <state x="555" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1604563323387" />
     <state x="555" y="296" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1603838429118" />
     <state x="741" y="455" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604446550365">
       <screen x="72" y="0" width="1848" height="1080" />

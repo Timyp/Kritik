@@ -45,13 +45,3 @@ services:
     env_file:
       - .env
     user: ${LOCAL_USER}
-
-#  node:
-#    container_name: sf5_node
-#    build:
-#      context: .
-#      dockerfile: docker/node/Dockerfile
-#    volumes:
-#      - './src/:/usr/src/app'
-#    command: bash -c "yarn && yarn dev"
-
