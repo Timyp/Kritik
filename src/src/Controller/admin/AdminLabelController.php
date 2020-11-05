@@ -70,7 +70,7 @@ class AdminLabelController extends AbstractController
             $manager->flush();
 
             $this->addFlash('success', 'Le label à bien été modifiée.');
-            return $this->redirectToRoute('admin_dashboard');
+            return $this->redirectToRoute('admin/dashboard_label_index.html.twig');
         }
 
         return $this->render('admin/dashboard_label.html.twig', [
